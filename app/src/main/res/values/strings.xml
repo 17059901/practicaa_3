@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">practicaa_3</string>
+        <string name="ir_registro">Registrate</string>
+        <string name="Nombre">Nombre:</string>
+        <string name="Telefono">Telefono:</string>
+        <string name="Fecha_Nacimiento">F_Nacimiento:</string>
+        <string name="edinombre">Escribe tu nombre</string>
+        <string name="editel">Teclea tu numero</string>
+        <string name="edifena">Escribe tu fecha nacimiento</string>
+        <string name="Hobbie">Hobbie:</string>
+        <string name="txt_chk1">Cine</string>
+        <string name="txt_chk2">Deportes</string>
+        <string name="txt_chk3">Bailar</string>
+        <string name="Tipo_de_residuo">Tipo de residuo:</string>
+        <string name="txt_rd1">Cliente</string>
+        <string name="txt_rd2">Disribuidor</string>
+        <string name="txt_rd3">Ambos</string>
+        <string name="btnregistrar">Registrar</string>
+        <string name="btncancel">Cancelar</string>
+        <string name="version">Version de la app v.1.1</string>
+
+    </resources>

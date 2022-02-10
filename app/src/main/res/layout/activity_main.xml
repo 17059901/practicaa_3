@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FBF3A9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ir_registro"
+            android:layout_gravity="right"
+            android:layout_margin="25dp"
+            android:textColor="#03A9F4" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/foto4"
+            android:layout_marginTop="10dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Nombre"
+                android:gravity="right"
+                android:layout_marginLeft="100dp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/edinombre"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/edinombre"
+                android:textSize="15dp"
+                tools:ignore="TouchTargetSizeCheck"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txtTelefono"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Telefono"
+                android:gravity="right"
+                android:layout_marginLeft="100dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/editel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/editel"
+                android:textSize="15dp"
+                tools:ignore="TouchTargetSizeCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/txtFecha_Nacimiento"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Fecha_Nacimiento"
+                android:gravity="right"
+                android:layout_marginLeft="100dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/edifena"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/edifena"
+                android:textSize="15dp"
+                tools:ignore="TouchTargetSizeCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/txtHobbie"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Hobbie"
+            android:gravity="right"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/black"/>
+
+        <CheckBox
+            android:id="@+id/ckck1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtHobbie"
+            android:minHeight="48dp"
+            android:checked="true"
+            android:textSize="15sp"
+            android:textColor="#13ED1C"
+            android:text="@string/txt_chk1" />
+
+        <CheckBox
+            android:id="@+id/ckck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtHobbie"
+            android:minHeight="48dp"
+            android:checked="true"
+            android:textSize="15sp"
+            android:textColor="#13ED1C"
+            android:text="@string/txt_chk2"
+            android:layout_toRightOf="@id/ckck1" />
+
+        <CheckBox
+            android:id="@+id/ckck3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtHobbie"
+            android:minHeight="48dp"
+            android:checked="true"
+            android:textSize="15sp"
+            android:textColor="#13ED1C"
+            android:text="@string/txt_chk3"
+            android:layout_toRightOf="@id/ckck2"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/Tipo_de_residuo"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Tipo_de_residuo"
+            android:gravity="right"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"/>
+        
+
+            <RadioGroup
+                android:id="@+id/radgr1"
+                android:layout_below="@id/ckck1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="0dp"
+                android:layout_marginLeft="0dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_rd1"
+                    android:layout_marginRight="20dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_rd2"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="0dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_rd3"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="0dp"/>
+
+            </RadioGroup>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="65dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnregistrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnregistrar"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#856608"/>
+
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btncancel"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#856608"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/version"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
